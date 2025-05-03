@@ -9,7 +9,7 @@ The first steps of pre-processing our data would be understanding the dataset fi
 
 As for visualization, we would plot a bar graph to visualize how many images are in each class. 
 This will allow us to see if the classes are balanced or not, and if so we can set a maximum image per class.
-Example: Setting the train data classes to have 200 images each to train on and setting the test data classes to have 20 images each.
+Example: Setting the train data classes to have 150 images each to train on and setting the test data classes to have 20 images each.
 
 Then we would load in the Train and Test data, along with the Test.csv to read the acutual labels of the test data. 
 
