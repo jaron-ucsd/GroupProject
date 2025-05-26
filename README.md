@@ -137,7 +137,7 @@ Flatten layer: 128 * 4 * 4 = 2048 features
 Hidden layer: 512 neurons with ReLU and Dropout(0.5)
 Output layer: 205 classes
 
-Model Training Setup
+# Model Training Setup:
 Hyperparameters:
 
 Optimizer: Adam with learning rate 0.001 (optim.Adam(model.parameters(), lr=0.001)
@@ -152,7 +152,7 @@ Split dataset into 80% training, 20% validation
 Implemented early monitoring of training vs validation accuracy
 Applied data augmentation during training to improve generalization
 
-Model Evaluation Results
+# Model Evaluation Results:
 
 Training Performance
 
@@ -218,7 +218,7 @@ Continued learning potential: No plateau observed by epoch 10
 
 Next Steps and Future Models
 
-# Framework Modifications:
+Framework Modifications:
 
 
 Experiment with deeper networks (ResNet, DenseNet architectures)
@@ -226,7 +226,7 @@ Add skip connections for better gradient flow
 Implement attention mechanisms for better feature focus
 
 
-# Regularization Techniques:
+Regularization Techniques:
 
 
 Increase dropout rates if overfitting is detected
@@ -234,14 +234,14 @@ Add L2 weight regularization
 Implement early stopping based on validation loss
 
 
-# Data Enhancement:
+Data Enhancement:
 
 
 Expand data augmentation strategies
 Balance class distribution through oversampling/undersampling
 
 
-# Hyperparameter Optimization
+Hyperparameter Optimization
 
 
 Grid search for optimal learning rates
@@ -266,9 +266,14 @@ Our CNN model was successful as a first attempt. We got a 85.70% accuracy on val
 What can be done to possibly improve it?
 We could train longer. We could continue past 10 epochs, since it was still improving. We could also better train the model. We could adjust settings to help the model learn the training data better. We could also work on classes that performed poorly (like classes 47, 106, 160). Another thing that we could do to improve the model is to try better models. We could possibly use ResNet or other advanced models or we could start with models that are already trained on images. We could also include brightness and zoom effects as we originally planned to do.
 
-Link
+As well we can build and output the classification report for the testing data, the current model's test classification report is not outputting correctly. 
 
+# Links:
+Dataset:
 https://www.kaggle.com/datasets/daniildeltsov/traffic-signs-gtsrb-plus-162-custom-classes/data
+
+Currrent updated code:
+https://github.com/jaron-ucsd/GroupProject/blob/Milestone3/Group_Milestone_3.ipynb
 
 # Environment Setup
 
