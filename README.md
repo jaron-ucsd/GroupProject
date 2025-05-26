@@ -20,3 +20,19 @@ Then we can resize all the images to the same size for uniformity, since some im
 We can also fix and repair some images by data augmentation (rotation, increasing/decreasing brightness, zoom/unzoom) 
 
 Since this dataset has already split the train and test data set, we can read them in seperately without creating a train/test split.
+
+# Environment Setup
+These were the default settings we used to setup our Juypter Session for our environment on Expanse SDSC.
+SLURM Settings:
+Account: "TG-CIS240277"
+Partition: "shared"
+Time Limit: Based on how long you want your Juypter Session to be running, usually we run "120" minutes
+Number of cores: 2
+Memory required per node (GB): 4
+GPUs: 0
+Singularity Image File Location: we used the default given, "~/esolares/spark_py_latest_jupyter_dsc232r.sif"
+Environment modules to be loaded: we loaded "singularitypro" to our Juypter Session
+For Working Directiory, we used "home".
+Type: "JuypterLab"
+
+Every other setting were left untouched, and no values. 
