@@ -251,9 +251,11 @@ Tune batch sizes and learning rate schedules
 # Questions
 
 Where does your model fit in the fitting graph? 
+
 The model fits well within the fitting graph, showing a clear upward trend in both training and validation accuracy over the 10 epochs. While training accuracy starts lower, it steadily improves, and the validation accuracy remains consistently higher, suggesting that the model is learning meaningful patterns without overfitting. This positioning on the fitting graph indicates a model that is underfitting slightly but has strong potential with further training or fine-tuning.
 
 What are the next models you are thinking of and why?
+
 For the next steps, exploring more advanced models such as convolutional neural networks (CNNs) (if the data is image-based) or transformer-based architectures (for text data) would be a logical progression. These models are capable of capturing more complex features and relationships in the data. Additionally, experimenting with pretrained models or implementing transfer learning could provide a performance boost, especially for classes with fewer examples. These approaches can help build on the current model’s strengths while addressing areas where improvement is needed.
 
 Conclusion
