@@ -257,19 +257,30 @@ Link:
 
 https://www.kaggle.com/datasets/daniildeltsov/traffic-signs-gtsrb-plus-162-custom-classes/data
 
-Environment Setup:
+# Environment Setup:
 
 These were the default settings we used to setup our Juypter Session for our environment on Expanse SDSC.
+
 SLURM Settings:
+
 Account: "TG-CIS240277"
+
 Partition: "shared"
+
 Time Limit: Based on how long you want your Juypter Session to be running, usually we run "120" minutes
+
 Number of cores: 2
+
 Memory required per node (GB): 4
+
 GPUs: 0
+
 Singularity Image File Location: we used the default given, "~/esolares/spark_py_latest_jupyter_dsc232r.sif"
+
 Environment modules to be loaded: we loaded "singularitypro" to our Juypter Session
+
 For Working Directiory, we used "home".
+
 Type: "JuypterLab"
 
 
