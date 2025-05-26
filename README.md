@@ -106,7 +106,7 @@ nn.MaxPool2d(2),
         # Second convolutional block
         nn.Conv2d(32, 64, kernel_size=3, padding=1),
         nn.BatchNorm2d(64),
-        nn.ReLU(),
+        nn.ReLU(),1
         nn.MaxPool2d(2),
         
         # Third convolutional block
@@ -200,7 +200,7 @@ Final Training Accuracy: 62.71%
 Final Validation Accuracy: 85.70%
 Training Loss Progression: Steady decrease from 3.57 to 1.25
 
-Analysis
+# Analysis: 
 
 The model appears to be in the underfitting region because:
 
@@ -218,7 +218,7 @@ Continued learning potential: No plateau observed by epoch 10
 
 Next Steps and Future Models
 
-Framework Modifications:
+# Framework Modifications:
 
 
 Experiment with deeper networks (ResNet, DenseNet architectures)
@@ -226,7 +226,7 @@ Add skip connections for better gradient flow
 Implement attention mechanisms for better feature focus
 
 
-Regularization Techniques:
+# Regularization Techniques:
 
 
 Increase dropout rates if overfitting is detected
@@ -234,14 +234,14 @@ Add L2 weight regularization
 Implement early stopping based on validation loss
 
 
-Data Enhancement:
+# Data Enhancement:
 
 
 Expand data augmentation strategies
 Balance class distribution through oversampling/undersampling
 
 
-Hyperparameter Optimization
+# Hyperparameter Optimization
 
 
 Grid search for optimal learning rates
@@ -270,19 +270,30 @@ Link
 
 https://www.kaggle.com/datasets/daniildeltsov/traffic-signs-gtsrb-plus-162-custom-classes/data
 
-Environment Setup
+# Environment Setup
 
 These were the default settings we used to setup our Jupyter Session for our environment on Expanse SDSC.
+
 SLURM Settings:
+
 Account: "TG-CIS240277"
+
 Partition: "shared"
+
 Time Limit: Based on how long you want your Jupyter Session to be running, usually we run "120" minutes
+
 Number of cores: 2
+
 Memory required per node (GB): 4
+
 GPUs: 0
+
 Singularity Image File Location: we used the default given, "~/esolares/spark_py_latest_jupyter_dsc232r.sif"
+
 Environment modules to be loaded: we loaded "singularitypro" to our Jupyter Session
+
 For Working Directory, we used "home".
+
 Type: "JupyterLab"
 
 
