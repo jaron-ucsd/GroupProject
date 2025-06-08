@@ -10,6 +10,7 @@ https://github.com/jaron-ucsd/GroupProject/blob/Milestone2/README.md
 
 Milestone 3:
 
+https://github.com/jaron-ucsd/GroupProject/blob/Milestone3/README.md
 
 # Introduction
 
