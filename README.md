@@ -16,4 +16,26 @@ For our group project, we had several ways of exploring our data. The dataset we
 
 path = kagglehub.dataset_download(“daniildeltsov/traffic-signs-gtsrb-plus-162-custom-classes")
 ![image](https://github.com/user-attachments/assets/3089043b-1c75-4e08-9cdd-1bae251a1642)
+Dataset analysis showed that training and test images were organized in separate folders by class. Training data was loaded by going through each class folder:
+
+```data = [] # Iterating over each subdirectory in "Train" (each subdir is a different class) 
+for subdir in sorted(os.listdir(train_root)): class_dir = os.path.join(train_root, subdir) if os.path.isdir(class_dir): class_id = subdir # e.g. "0", "1", "10", ... # Iterate over all files in that subdirectory for filename in os.listdir(class_dir): full_path = os.path.join(class_dir, filename) if os.path.isfile(full_path): data.append((full_path, class_id))```
+
+Image dimension analysis was performed using UDF functions:
+
+```def get_image_size(path): 
+	with Image.open(path) as img: 
+		return (img.width, img.height)```
+
+```udf_get_image_size = udf(get_image_size, schema_image_size) df_with_size = df_train.withColumn("size", udf_get_image_size(col("Path")))```
+
+We were also curious about the distribution of ClassID and Frequency of images in the test and train datasets, and we were able to visualize the comparisons through a histogram. This allowed us to see which ClassID had the maximum and minimum amount of images, and the average of images in each ClassID.
+![image](https://github.com/user-attachments/assets/eab638d5-9cd8-4318-a59c-9c0cefca0444)
+
+![image](https://github.com/user-attachments/assets/54bc5487-d6b4-4d30-8468-2720d4582ff0)
+
+![image](https://github.com/user-attachments/assets/74609cfb-4ab2-4c11-a51e-db08b046b143)
+
+
+
 
