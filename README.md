@@ -2,6 +2,15 @@
 
 # Traffic Sign Dataset: https://www.kaggle.com/datasets/daniildeltsov/traffic-signs-gtsrb-plus-162-custom-classes/data
 
+# Submission of All Submissions
+
+Milestone 2:
+
+https://github.com/jaron-ucsd/GroupProject/blob/Milestone2/README.md
+
+Milestone 3:
+
+
 # Introduction
 
 We chose to work with a traffic sign dataset because traffic sign recognition is a critical component of modern driver assistance systems and autonomous vehicles. It's a fascinating challenge that combines computer vision and real-world problem solving. What makes this project especially cool is its focus on imperfect, real-world conditions, such as blurry, tilted, faded, or partially blocked signs, rather than just clean, textbook examples. These kinds of edge cases are exactly where current systems can struggle the most.	
