@@ -35,7 +35,7 @@ Image dimension analysis was performed using UDF functions:
 We were also curious about the distribution of ClassID and Frequency of images in the test and train datasets, and we were able to visualize the comparisons through a histogram. This allowed us to see which ClassID had the maximum and minimum amount of images, and the average of images in each ClassID.
 
 
-![image](https://github.com/user-attachments/assets/e5cd4eab-73d0-4632-b11e-15a2d56bff06)
+
 
 
 
